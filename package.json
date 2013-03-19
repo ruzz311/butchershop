@@ -1,0 +1,26 @@
+{
+  "name": "butchershop",
+  "version": "0.0.1",
+  "description": "A node module to help you develop giblets of code for tough, chewy projects.",
+  "author": "Russell Madsen <ruzz311@gmail.com>",
+  "keywords": [
+    "proxy",
+    "tools",
+    "workbench",
+    "giblets"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ruzz311/butchershop.git"
+  },
+  "gitHead": "68288cdc58877f259534fb7c4fe098ecd3da2408",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'ha, maybe someday'"
+  },
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "hapi": "~0.15.6"
+  }
+}
