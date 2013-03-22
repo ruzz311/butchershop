@@ -1,6 +1,6 @@
 {
   "name": "butchershop",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A node module to help you develop giblets of code for tough, chewy projects.",
   "author": "Russell Madsen <ruzz311@gmail.com>",
   "keywords": [
@@ -22,4 +22,5 @@
   "dependencies": {
     "hapi": "~0.15.6"
   }
+  "gitHead": "d0738c7da2e5ef7b7ea64786dc2b7f6cd088253e",
 }
