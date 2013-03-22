@@ -9,8 +9,8 @@ assets that need development.  This project was developed out of a ton of frustr
 team who's static assets were coupled too tightly with a .NET project and my ever-growing hatred for 
 Visual Studio.
 
-Ideally, you have access to the codebase but it requires a difficult environment or heavy SDK (say 
-goodbye to slow Virtal Machines and/or bloated IDEs) that are unnecessary for static assets such as 
+Ideally, you have access to the code-base but it requires a difficult environment or heavy SDK (say 
+goodbye to slow Virtual Machines and/or bloated IDEs) that are unnecessary for static assets such as 
 CSS, Images, or JavaScript.  You can edit locally (helpful for pre-compiled css or coffee which can 
 be watched locally for changes and compiled) and still use your application's data routes or dynamic
 pages.
