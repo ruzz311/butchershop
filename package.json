@@ -21,6 +21,6 @@
   "readmeFilename": "README.md",
   "dependencies": {
     "hapi": "~0.15.6"
-  }
-  "gitHead": "d0738c7da2e5ef7b7ea64786dc2b7f6cd088253e",
+  },
+  "gitHead": "d0738c7da2e5ef7b7ea64786dc2b7f6cd088253e"
 }
