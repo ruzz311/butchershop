@@ -27,9 +27,9 @@ module.exports = class Butchershop
     #
     # Attach General Proxy Route Methods
     # 
-    carcass : (method)->
+    carcass : (method, path)->
         method  : method
-        path    : '/{path*}'
+        path    : path or '/{path*}'
         handler : 
             proxy: @options.proxy
     
