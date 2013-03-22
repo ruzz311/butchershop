@@ -13,7 +13,7 @@
     "type": "git",
     "url": "https://github.com/ruzz311/butchershop.git"
   },
-  "gitHead": "fe7d12bb029913daf6c5d815473d177f178e1a22",
+  "gitHead": "37030f15c409deee1de4efd138a22080cbb5ab35",
   "main": "index.js",
   "scripts": {
     "test": "echo 'ha, maybe someday'"
