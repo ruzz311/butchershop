@@ -1,6 +1,6 @@
 {
   "name": "butchershop",
-  "version": "0.0.3",
+  "version": "0.0.3b",
   "description": "A node module to help you develop giblets of code for tough, chewy projects.",
   "author": "Russell Madsen <ruzz311@gmail.com>",
   "keywords": [
