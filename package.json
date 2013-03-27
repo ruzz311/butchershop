@@ -1,6 +1,6 @@
 {
   "name": "butchershop",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A node module to help you develop giblets of code for tough, chewy projects.",
   "author": "Russell Madsen <ruzz311@gmail.com>",
   "keywords": [
@@ -15,7 +15,7 @@
     "type": "git",
     "url": "https://github.com/ruzz311/butchershop.git"
   },
-  "gitHead": "aa789aa219443e33193863dfb396cd11e47180d6",
+  "gitHead": "81b48799295391115577f8dcc987c843d943a13c",
   "main": "index.js",
   "scripts": {
     "test": "mocha --compilers coffee:coffee-script --reporter spec"
