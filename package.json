@@ -9,18 +9,26 @@
     "workbench",
     "giblets"
   ],
+  "license": "BSD",
+  "readmeFilename": "README.md",
   "repository": {
     "type": "git",
     "url": "https://github.com/ruzz311/butchershop.git"
   },
+  "gitHead": "aa789aa219443e33193863dfb396cd11e47180d6",
   "main": "index.js",
   "scripts": {
-    "test": "echo 'ha, maybe someday'"
+    "test": "mocha --compilers coffee:coffee-script --reporter spec"
   },
-  "license": "BSD",
-  "readmeFilename": "README.md",
   "dependencies": {
     "hapi": "~0.15.6"
   },
-  "gitHead": "d0738c7da2e5ef7b7ea64786dc2b7f6cd088253e"
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-coffee": "~0.6.3",
+    "grunt-contrib-watch": "~0.3.1",
+    "grunt-cafe-mocha": "~0.1.1",
+    "mocha": "1.1.0",
+    "should": "0.6.3",
+  }
 }
