@@ -14,6 +14,9 @@ var butcher = new Butchershop({
 });
 
 // chop any calls to '/stylus/*' to be routed to a local directory
-butcher.chop('/stylus/{path*}', './stylus-local')
+butcher.chop('/stylus/{path*}', './stylus-local');
 
-butcher.start()
+// Chop a specific file
+//butcher.chop('/static/npm.png', './butchershop.gif');
+
+butcher.start();
