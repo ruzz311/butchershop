@@ -31,7 +31,7 @@ Included in ./examples is, well... an example and can be run by `cd ./example; n
 
 ```js
 // require and set-up the server object.
-var Butchershop = require('../index.js');
+var Butchershop = require('butchershop');
 var butcher = new Butchershop({
     proxy: { host: 'npmjs.org' }
 });
