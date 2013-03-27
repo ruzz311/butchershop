@@ -15,7 +15,7 @@
     "type": "git",
     "url": "https://github.com/ruzz311/butchershop.git"
   },
-  "gitHead": "81b48799295391115577f8dcc987c843d943a13c",
+  "gitHead": "348dc791cc0aebde5c88aec5f7b9841203943e99",
   "main": "index.js",
   "scripts": {
     "test": "mocha --compilers coffee:coffee-script --reporter spec"
