@@ -1,3 +1,4 @@
 ./examples
 ./src
 ./Gruntfile.js
+./test
