@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+//
+// Butchershop CLI
+//
+// Description:
+//    Point the butchershop-cli at your "butchershop.json" file to use your
+//    butchershop development server faster.
+//
+//    -host             The carcass(remote-server) you plan to chop up.
+//    -hostport, -hp    The carcass(remote-server) port.
+//    -localport, -lp   The local server's port.
+//    -config, -c       The path to a butchershop json config.
+//
+
+
+//  @TODO: all that stuff above ^
+
+var path          = require('path');
+var globalModules = (process.env['NVM_BIN']) ? path.join(process.env['NVM_BIN'], '../lib/node_modules/') : '';
+
+console.log(globalModules);
