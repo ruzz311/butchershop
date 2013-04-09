@@ -38,6 +38,10 @@ var butcher = new Butchershop({
 
 // chop any calls to '/stylus/*' to route to a local directory that mimics the same path
 butcher.chop('/stylus/{path*}', './stylus-local');
+
+// OR Chop a specific file with the same method. 
+butcher.chop('/static/npm.png', './butchershop.gif');
+
 butcher.start();
 ```
 
