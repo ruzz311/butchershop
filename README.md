@@ -31,13 +31,17 @@ Included in ./examples is, well... an example and can be run by `cd ./example; n
 
 ```js
 // require and set-up the server object.
-var Butchershop = require('../index.js');
+var Butchershop = require('butchershop');
 var butcher = new Butchershop({
     proxy: { host: 'npmjs.org' }
 });
 
 // chop any calls to '/stylus/*' to route to a local directory that mimics the same path
 butcher.chop('/stylus/{path*}', './stylus-local');
+
+// OR Chop a specific file with the same method. 
+butcher.chop('/static/npm.png', './butchershop.gif');
+
 butcher.start();
 ```
 
