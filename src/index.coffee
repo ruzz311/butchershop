@@ -47,7 +47,7 @@ module.exports = class Butchershop
         path    : path or '/{path*}'
         handler : 
             proxy : @options.proxy
-    
+
     #
     # Attach Workbench Routes
     #

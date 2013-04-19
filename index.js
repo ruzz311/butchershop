@@ -76,6 +76,10 @@
       };
     };
 
+    Butchershop.prototype.routes = function(route) {
+      return this.server;
+    };
+
     Butchershop.prototype.chop = function(serverPath, localPath, options) {
       var handler, _ref;
 

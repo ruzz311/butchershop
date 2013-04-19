@@ -15,7 +15,7 @@ module.exports = function(grunt) {
       
       lib:    { files: { 'index.js': ['src/*.coffee'] } },
       // build tests (until cafemocha supports the --compilers option)
-      tests:  { files: { 'test/index.js': ['test/*.coffee'] } }
+      tests:  { files: { 'test/index.js': ['test/**/*.coffee'] } }
       
     },
     
@@ -42,12 +42,17 @@ module.exports = function(grunt) {
       
       coffee_lib: {
         files: ['src/**/*.coffee'],
-        tasks: ['coffee:lib', 'cafemocha']
+        tasks: ['coffee:lib']
       },
       
       coffee_tests: {
         files: ['test/**/*.coffee'],
-        tasks: ['coffee:tests', 'cafemocha']
+        tasks: ['coffee:tests']
+      },
+
+      test_runner : {
+        files: ['**/*.js'],
+        tasks: ['cafemocha']
       }
       
     }
@@ -61,5 +66,5 @@ module.exports = function(grunt) {
   // Default task - can be run with 'grunt default' or simply 'grunt'
   grunt.registerTask('default', [ 'coffee', 'cafemocha' ]);
   
-  grunt.registerTask('dev', [ 'watch:coffee_lib', 'watch:coffee_tests', 'watch:mocha' ]);
+  grunt.registerTask('dev', [ 'watch' ]);
 };
