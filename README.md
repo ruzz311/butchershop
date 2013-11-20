@@ -1,6 +1,10 @@
 butchershop
 ===========
 
+[![NPM](https://nodei.co/npm/butchershop.png?downloads=true&stars=true)](https://nodei.co/npm-dl/butchershop/)  
+
+[![NPM](https://nodei.co/npm-dl/butchershop.png?months=9)](https://nodei.co/npm-dl/butchershop/)
+
 **Butcher your next {frustrating technology stack} project**
 
 Butchershop is a workbench of sorts that leverages the [hapi.js](https://github.com/spumko/hapi/) 
