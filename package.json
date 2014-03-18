@@ -1,6 +1,6 @@
 {
   "name": "butchershop",
-  "version": "0.0.6",
+  "version": "1.0",
   "description": "A node module to help you develop giblets of code for tough, chewy projects.",
   "author": "Russell Madsen <ruzz311@gmail.com>",
   "keywords": [
@@ -18,17 +18,11 @@
   "gitHead": "348dc791cc0aebde5c88aec5f7b9841203943e99",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --compilers coffee:coffee-script --reporter spec"
+    "start": "node app.js"
   },
   "dependencies": {
-    "hapi": "~0.15.6"
-  },
-  "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-coffee": "~0.6.3",
-    "grunt-contrib-watch": "~0.3.1",
-    "grunt-cafe-mocha": "~0.1.1",
-    "mocha": "1.1.0",
-    "should": "0.6.3"
+    "express": "3.4.7",
+    "lodash": "~2.4.1",
+    "jade": "*"
   }
 }
