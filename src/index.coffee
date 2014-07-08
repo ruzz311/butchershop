@@ -12,7 +12,7 @@ module.exports = class Butchershop
         opt.proxy.host      ?= 'npmjs.org'
         opt.proxy.port      ?= 80
         opt.methods         ?= [ 'GET', 'POST', 'PUT', 'DELETE', 'OPTIONS' ]
-        opt.relativeTo      ?= 'cwd'
+        opt.relativeTo      ?= './'
         @options            = opt
         
         # Create hapi server

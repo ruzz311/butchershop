@@ -1,6 +1,6 @@
 {
   "name": "butchershop",
-  "version": "0.0.6",
+  "version": "0.1.0-pre",
   "description": "A node module to help you develop giblets of code for tough, chewy projects.",
   "author": "Russell Madsen <ruzz311@gmail.com>",
   "keywords": [
@@ -13,15 +13,14 @@
   "readmeFilename": "README.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ruzz311/butchershop.git"
+    "url": "https://github.com/simshanith/butchershop.git"
   },
-  "gitHead": "348dc791cc0aebde5c88aec5f7b9841203943e99",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --compilers coffee:coffee-script --reporter spec"
+    "test": "grunt"
   },
   "dependencies": {
-    "hapi": "~0.15.6"
+    "hapi": "~6.0.2"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
