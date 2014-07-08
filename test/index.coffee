@@ -21,9 +21,9 @@ describe 'Butchershop', ->
             butcher = new Butchershop()
             proxy = butcher.options.proxy
 
-            proxy.protocol.should.equal 'http'
-            proxy.host.should.equal 'npmjs.org'
-            proxy.port.should.equal 80
+            proxy.protocol.should.equal 'https'
+            proxy.host.should.equal 'www.npmjs.org'
+            proxy.port.should.equal 443
 
     describe 'isFile', ->
         

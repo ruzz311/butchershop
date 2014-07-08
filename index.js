@@ -22,13 +22,13 @@
         opt.proxy = {};
       }
       if ((_base2 = opt.proxy).protocol == null) {
-        _base2.protocol = 'http';
+        _base2.protocol = 'https';
       }
       if ((_base3 = opt.proxy).host == null) {
-        _base3.host = 'npmjs.org';
+        _base3.host = 'www.npmjs.org';
       }
       if ((_base4 = opt.proxy).port == null) {
-        _base4.port = 80;
+        _base4.port = 443;
       }
       if (opt.methods == null) {
         opt.methods = ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'];
@@ -111,7 +111,7 @@
         this.server.route(this.carcass(method));
       }
       return this.server.start(function() {
-        return console.log("" + _this.server.settings.host + ":" + _this.server.settings.port + " started!");
+        return console.log("" + _this.server.info.host + ":" + _this.server.info.port + " started!");
       });
     };
 

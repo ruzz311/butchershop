@@ -8,9 +8,9 @@ module.exports = class Butchershop
         opt.local.host      ?= 'localhost'
         opt.local.port      ?= 8000
         opt.proxy           ?= {}
-        opt.proxy.protocol  ?= 'http'
-        opt.proxy.host      ?= 'npmjs.org'
-        opt.proxy.port      ?= 80
+        opt.proxy.protocol  ?= 'https'
+        opt.proxy.host      ?= 'www.npmjs.org'
+        opt.proxy.port      ?= 443
         opt.methods         ?= [ 'GET', 'POST', 'PUT', 'DELETE', 'OPTIONS' ]
         opt.relativeTo      ?= './'
         @options            = opt
@@ -76,5 +76,5 @@ module.exports = class Butchershop
             @server.route( @carcass(method) )
         
         @server.start ()=> 
-            console.log "#{@server.settings.host}:#{@server.settings.port} started!"
+            console.log "#{@server.info.host}:#{@server.info.port} started!"
     
