@@ -15,3 +15,5 @@ npm-debug.log
 
 test/*.js
 src/*.js
+
+node_modules/

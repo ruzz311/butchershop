@@ -8,11 +8,11 @@ module.exports = class Butchershop
         opt.local.host      ?= 'localhost'
         opt.local.port      ?= 8000
         opt.proxy           ?= {}
-        opt.proxy.protocol  ?= 'http'
-        opt.proxy.host      ?= 'npmjs.org'
-        opt.proxy.port      ?= 80
+        opt.proxy.protocol  ?= 'https'
+        opt.proxy.host      ?= 'www.npmjs.org'
+        opt.proxy.port      ?= 443
         opt.methods         ?= [ 'GET', 'POST', 'PUT', 'DELETE', 'OPTIONS' ]
-        opt.relativeTo      ?= 'cwd'
+        opt.relativeTo      ?= './'
         @options            = opt
         
         # Create hapi server
@@ -71,10 +71,10 @@ module.exports = class Butchershop
     #
     # Start the workbench
     #
-    start : ()->
+    start : (callback = (->))->
         for method in @options.methods
             @server.route( @carcass(method) )
         
         @server.start ()=> 
-            console.log "#{@server.settings.host}:#{@server.settings.port} started!"
-    
+            console.log "#{@server.info.host}:#{@server.info.port} started!"
+            callback()

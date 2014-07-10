@@ -1,5 +1,6 @@
 mocha       = require 'mocha'
 should      = require 'should'
+#inspect     = (require 'util').inspect
 Butchershop = require '../index'
 
 describe 'Butchershop', ->
@@ -20,10 +21,10 @@ describe 'Butchershop', ->
             butcher = new Butchershop()
             proxy = butcher.options.proxy
 
-            proxy.protocol.should.equal 'http'
-            proxy.host.should.equal 'npmjs.org'
-            proxy.port.should.equal 80
-    
+            proxy.protocol.should.equal 'https'
+            proxy.host.should.equal 'www.npmjs.org'
+            proxy.port.should.equal 443
+
     describe 'isFile', ->
         
         butcher = new Butchershop()
@@ -53,18 +54,19 @@ describe 'Butchershop', ->
         for file in path.files
             it "should detect that '#{ file }' is a file", ->
                 butcher.isFile( file ).should.equal true
-        
+
     describe 'Chops list (routes)', ->
         butcher = new Butchershop()
-        
+
         butcher.chop '/test/route1/{path*}', '../local-test/route1'
         butcher.chop '/test/route2/{path*}', '../local-test/route2'
-        
-        routes = butcher.server._router.table.get
+
+        routes = butcher.server._router.table()
+        #console.log(inspect routes)
+
 
         it "should have 2 routes defined", ->
-            (butcher.server._router.table.get).length.should.equal 2
+            routes.length.should.equal 2
 
         it "should match the hapijs route path", ->
-            (routes[0].path).should.equal "/test/route1/{path*}"
-            
+            routes[0].path.should.equal "/test/route1/{path*}"
