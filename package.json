@@ -13,7 +13,7 @@
   "readmeFilename": "README.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/simshanith/butchershop.git"
+    "url": "https://github.com/ruzz311/butchershop.git"
   },
   "main": "index.js",
   "scripts": {
