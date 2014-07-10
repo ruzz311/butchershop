@@ -71,10 +71,10 @@ module.exports = class Butchershop
     #
     # Start the workbench
     #
-    start : ()->
+    start : (callback = (->))->
         for method in @options.methods
             @server.route( @carcass(method) )
         
         @server.start ()=> 
             console.log "#{@server.info.host}:#{@server.info.port} started!"
-    
+            callback()

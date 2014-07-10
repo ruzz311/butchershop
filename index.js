@@ -102,16 +102,20 @@
       });
     };
 
-    Butchershop.prototype.start = function() {
+    Butchershop.prototype.start = function(callback) {
       var method, _i, _len, _ref,
         _this = this;
+      if (callback == null) {
+        callback = (function() {});
+      }
       _ref = this.options.methods;
       for (_i = 0, _len = _ref.length; _i < _len; _i++) {
         method = _ref[_i];
         this.server.route(this.carcass(method));
       }
       return this.server.start(function() {
-        return console.log("" + _this.server.info.host + ":" + _this.server.info.port + " started!");
+        console.log("" + _this.server.info.host + ":" + _this.server.info.port + " started!");
+        return callback();
       });
     };
 
