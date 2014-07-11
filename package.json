@@ -3,6 +3,9 @@
   "version": "0.1.0-pre",
   "description": "A node module to help you develop giblets of code for tough, chewy projects.",
   "author": "Russell Madsen <ruzz311@gmail.com>",
+  "contributors": [
+      "Shane Daniel <simrpgman@gmail.com>"
+  ],
   "keywords": [
     "proxy",
     "tools",
