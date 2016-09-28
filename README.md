@@ -6,7 +6,7 @@ butchershop
 [![NPM](https://nodei.co/npm-dl/butchershop.png?months=9)](https://nodei.co/npm-dl/butchershop/)
 
 **Butcher your next {frustrating technology stack} project**
-
+ 
 Butchershop is a workbench of sorts that leverages the [hapi.js](https://github.com/spumko/hapi/) 
 module to help you develop front-end code using local assets with a remote server.  Basically a 
 reverse-proxy site where you can "chop" in assets that need development.  
@@ -22,7 +22,7 @@ Lets get real for a second.  This project was developed out of a ton of frustrat
 front-end, static assets coupled too tightly with a .NET project and my ever-growing hatred for 
 Microsoft Visual Studio.
 
-### Install
+### Install 
 
 ```bash
 npm install butchershop --save-dev
